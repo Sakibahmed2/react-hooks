@@ -1,5 +1,3 @@
-import React from "react";
-
 const UsersList = ({ isLoading, error, data }) => {
   if (isLoading && !error) {
     return <p className="text-4xl text-purple-500">Loading...</p>;
