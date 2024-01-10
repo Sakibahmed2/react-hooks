@@ -3,6 +3,7 @@ import "./App.css";
 import { TThemeContext, ThemeContext } from "./context/ThemeProvider";
 import { MenuItem, MenuList } from "./components/Menu";
 import GameResult from "./pages/hooksPages/GameResult";
+import UsersContainer from "./components/UsersContainer";
 
 function App() {
   const { dark, setDark } = useContext(ThemeContext) as TThemeContext;
@@ -14,7 +15,7 @@ function App() {
         dark ? "bg-black" : "bg-white"
       }`}
     >
-      <GameResult />
+      <UsersContainer />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-# React TypeScript Hooks Practice
+# React TypeScript Hooks
 
 This React project, developed with TypeScript, serves as a practical playground for mastering various React hooks. The primary hooks showcased include `useState`, `useReducer`, `useEffect`, `useMemo`, and the Context API.
 
