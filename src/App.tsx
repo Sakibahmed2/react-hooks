@@ -1,9 +1,7 @@
 import { useContext } from "react";
 import "./App.css";
+import Select from "./components/Select";
 import { TThemeContext, ThemeContext } from "./context/ThemeProvider";
-import { MenuItem, MenuList } from "./components/Menu";
-import GameResult from "./pages/hooksPages/GameResult";
-import UsersContainer from "./components/UsersContainer";
 
 function App() {
   const { dark, setDark } = useContext(ThemeContext) as TThemeContext;
@@ -15,7 +13,12 @@ function App() {
         dark ? "bg-black" : "bg-white"
       }`}
     >
-      <UsersContainer />
+      <Select>
+        <Select.SelectOption value="option1">Option 1</Select.SelectOption>
+        <Select.SelectOption value="option2">Option 2</Select.SelectOption>
+        <Select.SelectOption value="option3">Option 3</Select.SelectOption>
+        <Select.SelectOption value="option4">Option 4</Select.SelectOption>
+      </Select>
     </div>
   );
 }

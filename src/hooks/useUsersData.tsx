@@ -24,10 +24,9 @@ const useUsersData = () => {
 
   useEffect(() => {
     getUsers();
-
-    return () => {
-      controller.abort();
-    };
+    // return () => {
+    //   controller.abort();
+    // };
   }, []);
 
   return { isLoading, data, error };

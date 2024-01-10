@@ -10,7 +10,7 @@ const UsersList = ({ isLoading, error, data }) => {
   return (
     <div>
       {data?.map((item) => (
-        <p>{item.name}</p>
+        <p key={item.id}>{item.name}</p>
       ))}
     </div>
   );
